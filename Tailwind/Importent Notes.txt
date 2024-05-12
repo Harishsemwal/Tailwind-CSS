@@ -1,0 +1,21 @@
+create two folder: dist, src.
+dist: index.html
+src : input.css
+
+input.css :-
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+tailwind.config:
+content: ["./dist/index.html"]
+
+npx tailwindcss -i ./src/input.css -o ./dist/style.css
+
+npx tailwindcss -i ./src/input.css -o ./dist/style.css --watch
+
+
+Terminal:
+npx tailwindcss init
+
